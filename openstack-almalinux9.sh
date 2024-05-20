@@ -105,7 +105,7 @@ yum repolist
 
 yum update -y && yum upgrade -y
 
-reboot
+#reboot
 
 #Install & Configure OpenStack-PackStack
 
