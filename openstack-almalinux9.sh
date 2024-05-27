@@ -151,4 +151,5 @@ packstack --answer-file /root/answers.txt | tee Openstack-Installation-log.txt
 
 #To access Horizon Dashboard use the URL:
 
-http://$IP_ADDRESS/dashboard
+echo -e "${bgreen}http://$IP_ADDRESS/dashboard ${nc} "
+
