@@ -19,7 +19,7 @@ hostnamectl set-hostname $hostname
 
 echo -e "${bgreen} Enable PowerTools/CRB repository ${nc} "
 
-dnf install dnf-plugins-core -y
+#dnf install dnf-plugins-core -y
 dnf config-manager --set-enabled crb -y
 dnf install epel-release -y
 #sudo dnf install https://www.rdoproject.org/repos/rdo-release.el9.rpm -y
@@ -38,8 +38,6 @@ ls /etc/sysconfig/network-scripts/
 
 systemctl start network
 systemctl enable network
-
-systemctl restart network
 
 # Verifying IP & MAC Addresses
 ip a
@@ -92,6 +90,8 @@ systemctl stop firewalld
 #systemctl status NetworkManager
 systemctl disable NetworkManager
 systemctl stop NetworkManager
+
+systemctl restart network
 
 ifup $STATIC_INTERFACE
 
