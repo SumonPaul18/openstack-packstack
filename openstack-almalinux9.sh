@@ -75,6 +75,7 @@ nmcli connection up $STATIC_INTERFACE
 ip a s $STATIC_INTERFACE
 
 systemctl restart NetworkManager
+
 ifup $STATIC_INTERFACE
 
 cp /etc/sysconfig/network-scripts/ifcfg-$STATIC_INTERFACE /etc/sysconfig/network-scripts/ifcfg-$STATIC_INTERFACE.bak
@@ -101,9 +102,9 @@ systemctl restart network
 
 ifup $STATIC_INTERFACE
 
-yum autoremove epel-release
+yum autoremove epel-release -y
 
-yum autoremove openstack-packstack
+yum autoremove openstack-packstack -y
  
 yum clean all
 
@@ -120,9 +121,9 @@ yum update -y && yum upgrade -y
 dnf config-manager --set-enabled crb
 
 #Working On AlmaLinux 9
-dnf install centos-release-openstack-yoga
+dnf install centos-release-openstack-yoga -y
 
-yum install -y openstack-packstack
+yum install -y openstack-packstack -y
 
 yum repolist
 
