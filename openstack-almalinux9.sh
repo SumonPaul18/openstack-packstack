@@ -22,7 +22,7 @@ echo -e "${bgreen} Enable PowerTools/CRB repository ${nc} "
 #dnf install dnf-plugins-core -y
 dnf config-manager --set-enabled crb -y
 dnf install epel-release -y
-yum install nano -y
+dnf install nano -y
 #sudo dnf install https://www.rdoproject.org/repos/rdo-release.el9.rpm -y
 #dnf install centos-release-openstack-antelope -y
 #dnf install centos-release-openstack-zed -y
@@ -30,10 +30,10 @@ yum install nano -y
 dnf install centos-release-openstack-yoga -y
 
 dnf clean all
-#yum clean all
+#dnf clean all
 #dnf update -y
 
-yum install network-scripts -y
+dnf install network-scripts -y
 
 ls /etc/sysconfig/network-scripts/
 
@@ -103,15 +103,15 @@ systemctl restart network
 
 ifup $STATIC_INTERFACE
 
-yum autoremove epel-release -y
+dnf autoremove epel-release -y
 
-yum autoremove openstack-packstack -y
+dnf autoremove openstack-packstack -y
  
-yum clean all
+dnf clean all
 
-yum repolist
+dnf repolist
 
-yum update -y && yum upgrade -y
+dnf update -y && dnf upgrade -y
 
 #reboot
 
@@ -124,11 +124,11 @@ dnf config-manager --set-enabled crb -y
 #Working On AlmaLinux 9
 dnf install centos-release-openstack-yoga -y
 
-yum install -y openstack-packstack -y
+dnf install -y openstack-packstack -y
 
-yum repolist
+dnf repolist
 
-yum update -y
+dnf update -y
 
 packstack --version
 
