@@ -118,7 +118,7 @@ yum update -y && yum upgrade -y
 
 #For AlmaLinux 9
 
-dnf config-manager --set-enabled crb
+dnf config-manager --set-enabled crb -y
 
 #Working On AlmaLinux 9
 dnf install centos-release-openstack-yoga -y
