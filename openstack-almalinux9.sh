@@ -103,11 +103,11 @@ systemctl restart network
 
 ifup $STATIC_INTERFACE
 
-dnf autoremove epel-release -y
+#dnf autoremove epel-release -y
 
-dnf autoremove openstack-packstack -y
+#dnf autoremove openstack-packstack -y
  
-dnf clean all
+#dnf clean all
 
 dnf repolist
 
@@ -119,10 +119,10 @@ dnf update -y && dnf upgrade -y
 
 #For AlmaLinux 9
 
-dnf config-manager --set-enabled crb -y
+#dnf config-manager --set-enabled crb -y
 
 #Working On AlmaLinux 9
-dnf install centos-release-openstack-yoga -y
+#dnf install centos-release-openstack-yoga -y
 
 dnf install -y openstack-packstack -y
 
@@ -153,10 +153,10 @@ packstack --os-neutron-ml2-tenant-network-types=vxlan \
 
 
 #Take Copy the answes file
-cp answers.txt answers.copy.txt
+cp /root/answers.txt /root/answers.copy.txt
 
 #Installation OpenStack
-packstack --answer-file /root/answers.txt | tee Openstack-Installation-log.txt
+packstack --answer-file /root/answers.txt | tee openstack-installation-log.txt
 
 #To access Horizon Dashboard use the URL:
 
