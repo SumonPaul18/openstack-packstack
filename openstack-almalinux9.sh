@@ -28,8 +28,8 @@ dnf install epel-release -y
 #dnf install centos-release-openstack-bobcat -y
 dnf install centos-release-openstack-yoga -y
 
-dnf clean all 
-yum clean all
+dnf clean all
+#yum clean all
 #dnf update -y
 
 yum install network-scripts -y
@@ -48,19 +48,20 @@ echo
 echo -e "${bgreen}${bold}${blink} Network Settings ${nc} "
 
 read -p "Type static IP Interface Name: " STATIC_INTERFACE
-read -p "Type MAC for static Interface: " MAC_Address
-read -p "Type static IP Address with CIDR: " IP_ADDRESS
+read -p "Type MAC for static Interface: " MAC_ADDRESS
+read -p "Type static IP Address: " IP_ADDRESS
+read -p "Type IP PREFIX (CIDR): " IP_PREFIX
 read -p "Type Gateway4: " GATEWAY
 read -p "Type 1st DNS: " DNS
 read -p "Type 2nd DNS: " DNS2
 
 cat <<EOF | sudo tee /etc/sysconfig/network-scripts/ifcfg-$STATIC_INTERFACE
-HWADRR=$MAC_Address
+HWADRR=$MAC_ADDRESS
 NM_CONTROLLED=no
 BOOTPROTO=static
 ONBOOT=yes
 IPADDR=$IP_ADDRESS
-PREFIX=24
+PREFIX=$IP_PREFIX
 GATEWAY=$GATEWAY
 DNS1=$DNS
 DNS2=$DNS2
