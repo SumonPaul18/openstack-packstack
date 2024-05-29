@@ -140,7 +140,7 @@ packstack --version
 read -p "Type Your OpenStack Administrator Password: " apassword
 
 packstack --os-neutron-ml2-tenant-network-types=vxlan \
---os-ntp-servers=0.asia.pool.ntp.org,1.asia.pool.ntp.org,2.asia.pool.ntp.org,3.asia.pool.ntp.org \
+--ntp-servers=0.asia.pool.ntp.org,1.asia.pool.ntp.org,2.asia.pool.ntp.org,3.asia.pool.ntp.org \
 --os-neutron-ovs-bridge-interfaces=br-ex:$STATIC_INTERFACE \
 --os-neutron-ml2-mechanism-drivers=openvswitch \
 --os-neutron-ml2-type-drivers=vxlan,flat \
