@@ -83,6 +83,11 @@ cat /etc/sysconfig/network-scripts/ifcfg-$STATIC_INTERFACE
 
 echo "$IP_ADDRESS $hostname.paulco.xyz $hostname" >> /etc/hosts
 
+echo
+echo
+
+hostname -f
+
 sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 
 systemctl disable firewalld
