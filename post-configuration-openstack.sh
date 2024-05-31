@@ -26,10 +26,13 @@ echo
 read -p "DHCP-Pool Start IP: " START_IP
 echo
 read -p "DHCP-Pool End IP: " END_IP
+echo
+read -p "DNS Server: " DNS_SERVER
 
 openstack subnet create --network public \
 --allocation-pool start=$START_IP,end=$END_IP \
---no-dhcp --subnet-range $LAN_NETWORK public_subnet
+--no-dhcp --dns-nameserver $DNS_SERVER \
+--subnet-range $LAN_NETWORK public_subnet
 
 #Create a router and configure router interfaces
 
