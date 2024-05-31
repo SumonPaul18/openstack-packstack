@@ -4,7 +4,7 @@ red='\033[0;31m'
 nc='\033[0m'
 bold="\033[1m"
 blink="\033[5m"
-echo -e "${bgreen}Settings up Static IP Address ${nc} "
+echo -e "${bgreen}Install OpenStack-PackStack on Almalinux 9 ${nc} "
 
 # Set Hostname
 #echo -e "${bgreen}Type Hostname : ${nc}"
