@@ -35,4 +35,10 @@ ip netns show
 
 openstack image list
 
+wget http://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+
+openstack image create --disk-format qcow2 \
+--container-format bare --public \
+--file jammy-server-cloudimg-amd64.img ubuntu
+
 
