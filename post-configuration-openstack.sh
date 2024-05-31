@@ -1,6 +1,10 @@
 #!/bin/bash
 #Configure Network in OpenStack by Cli
 
+#Create OpenStack private Network.
+
+openstack network create private
+
 #Create subnet for private Network
 
 openstack subnet create --network private \
@@ -15,9 +19,14 @@ openstack network create --provider-network-type flat \
 
 #Create subnet for public Network
 
+echo -e "${bgreen}Subnet Create for Public Network ${nc} "
+read -p "LAN Network with CIDR (ex:192.168.x.x/24): " lan-network
+read -p "Allocation-Pool Start IP: " start-ip
+read -p "Allocation-Pool End IP: " end-ip
+
 openstack subnet create --network public \
---allocation-pool start=192.168.0.100,end=192.168.0.200 \
---no-dhcp --subnet-range 192.168.0.0/24 public_subnet
+--allocation-pool start=$start-ip,end=1$end-ip \
+--no-dhcp --subnet-range $lan-network public_subnet
 
 #Create a router and configure router interfaces
 
