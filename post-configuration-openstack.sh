@@ -21,15 +21,15 @@ openstack network create --provider-network-type flat \
 
 echo -e "${bgreen}Subnet Create for Public Network ${nc} "
 echo
-read -p "LAN Network with CIDR (ex:192.168.x.x/24): " LAN-NETWORK
+read -p "LAN Network with CIDR (ex:192.168.x.x/24): " LAN_NETWORK
 echo
-read -p "Allocation-Pool Start IP: " START-IP
+read -p "DHCP-Pool Start IP: " START_IP
 echo
-read -p "Allocation-Pool End IP: " END-IP
+read -p "DHCP-Pool End IP: " END_IP
 
 openstack subnet create --network public \
---allocation-pool start=$START-IP,end=$END-IP \
---no-dhcp --subnet-range $LAN-NETWORK public_subnet
+--allocation-pool start=$START_IP,end=$END_IP \
+--no-dhcp --subnet-range $LAN_NETWORK public_subnet
 
 #Create a router and configure router interfaces
 
