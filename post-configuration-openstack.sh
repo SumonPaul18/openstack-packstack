@@ -41,4 +41,6 @@ openstack image create --disk-format qcow2 \
 --container-format bare --public \
 --file jammy-server-cloudimg-amd64.img ubuntu
 
+openstack image list
+
 
