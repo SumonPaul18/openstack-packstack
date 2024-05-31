@@ -23,6 +23,8 @@ echo -e "${bgreen} Enable PowerTools/CRB repository ${nc} "
 dnf config-manager --set-enabled crb -y
 dnf install epel-release -y
 dnf install nano -y
+dnf install screen -y
+dnf install wget -y
 #sudo dnf install https://www.rdoproject.org/repos/rdo-release.el9.rpm -y
 #dnf install centos-release-openstack-antelope -y
 #dnf install centos-release-openstack-zed -y
