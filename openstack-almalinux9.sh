@@ -37,6 +37,7 @@ dnf install network-scripts -y
 
 ls /etc/sysconfig/network-scripts/
 
+#systemctl status network
 systemctl start network
 systemctl enable network
 
