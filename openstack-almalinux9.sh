@@ -114,7 +114,7 @@ dnf repolist
 
 dnf update -y && dnf upgrade -y
 
-reboot
+#reboot
 
 #Install & Configure OpenStack-PackStack
 
