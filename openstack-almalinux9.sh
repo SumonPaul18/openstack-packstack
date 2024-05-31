@@ -46,7 +46,7 @@ ip a
 echo
 echo
 
-echo -e "${bgreen}${bold}${blink} Network Settings ${nc} "
+echo -e "${bgreen}${bold}${blink} Configure Static IP ${nc} "
 
 read -p "Type static IP Interface Name: " STATIC_INTERFACE
 read -p "Type MAC for static Interface: " MAC_ADDRESS
