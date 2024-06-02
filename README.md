@@ -4,6 +4,7 @@
 ####
 Clone this Git Repository
 ####
+    dnf install git -y
     git clone https://github.com/SumonPaul18/build-openstack-packstack-almalinux9.git
     chmod -P +x build-openstack-packstack-almalinux9
     cd build-openstack-packstack-almalinux9
