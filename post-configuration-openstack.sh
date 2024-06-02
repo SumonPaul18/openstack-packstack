@@ -1,5 +1,10 @@
 #!/bin/bash
-#Configure Network in OpenStack by Cli
+bgreen='\033[1;32m'
+red='\033[0;31m'
+nc='\033[0m'
+bold="\033[1m"
+blink="\033[5m"
+echo -e "${bgreen}Configure Network in OpenStack ${nc} "
 
 #Create OpenStack private Network.
 
@@ -19,7 +24,7 @@ openstack network create --provider-network-type flat \
 
 #Create subnet for public Network
 
-echo -e "${bgreen}Subnet Create for Public Network ${nc} "
+echo -e "${bgreen}Create Subnet for Public Network ${nc} "
 echo
 read -p "LAN Network with CIDR (ex:192.168.x.x/24): " LAN_NETWORK
 echo
