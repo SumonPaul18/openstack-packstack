@@ -4,11 +4,16 @@ red='\033[0;31m'
 nc='\033[0m'
 bold="\033[1m"
 blink="\033[5m"
-echo -e "${bgreen}Install OpenStack-PackStack on Almalinux 9 ${nc} "
+echo
+echo
 
+echo -e "${bgreen}Step-01: Install OpenStack-PackStack on Almalinux 9 ${nc} "
+
+hostnamectl
+timedatectl
+timedatectl set-timezone Asia/Dhaka
 # Set Hostname
-#echo -e "${bgreen}Type Hostname : ${nc}"
-#read hostname
+#echo -e "${bgreen}Setup System Hostname : ${nc}"
 
 echo
 echo
