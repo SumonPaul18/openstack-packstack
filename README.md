@@ -17,11 +17,13 @@ The System has Rebooted
 ####
 Second execute build-openstack.sh Shell Script file for Install OpenStack
 ####
+    cd /root/build-openstack-packstack-almalinux9
     . build-openstack.sh
 After Successfully Installation Complete
 ####
 Third execute post-configuration-openstack.sh Shell Script file for OpenStack Basic Configuration on Network and Image services
 ####
+    cd /root
     . keystonerc_admin
-    . post-configuration-openstack.sh
+    . /root/build-openstack-packstack-almalinux9/post-configuration-openstack.sh
 Now Successfully Configured OpenStack 
