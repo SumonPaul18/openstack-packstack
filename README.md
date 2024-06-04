@@ -22,5 +22,6 @@ After Successfully Installation Complete
 ####
 Third execute post-configuration-openstack.sh Shell Script file for OpenStack Basic Configuration on Network and Image services
 ####
+    . . keystonerc_admin
     . post-configuration-openstack.sh
 Now Successfully Configured OpenStack 
