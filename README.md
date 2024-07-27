@@ -1,5 +1,6 @@
 # How to Build OpenStack Cloud using PackStack on Almalinux 9
 #### 
+![OpenStack](https://github.com/SumonPaul18/build-openstack-packstack-almalinux9/blob/main/InstallOpenStack.png)
 ### Login System Terminal as Root
 ####
 Clone this Git Repository
