@@ -2,27 +2,29 @@
 #### 
 ![OpenStack](https://github.com/SumonPaul18/build-openstack-packstack-almalinux9/blob/main/InstallOpenStack.png)
 #
-### Login System Terminal as Root
-####
-Clone this Git Repository
+## Step-1:
+### Login Systems Terminal as Root
+
+First execute pre-configure-openstack.sh Shell Script file for Preparing Installation OpenStack
 ####
     dnf install git -y
     git clone https://github.com/SumonPaul18/build-openstack-packstack-almalinux9.git
     chmod -R +x build-openstack-packstack-almalinux9
     cd build-openstack-packstack-almalinux9
     ls
-####
-First execute pre-configure-openstack.sh Shell Script file for Preparing Installation OpenStack
-####
     . pre-configuration-openstack.sh
-The System has Rebooted
-####
+####  
+After Done Configuration the system has Rebooted
+#
+## Step-2:
+
 Second execute build-openstack.sh Shell Script file for Install OpenStack
 ####
     cd /root/build-openstack-packstack-almalinux9
     . build-openstack.sh
 After Successfully Installation Complete
-####
+#
+## Step-3:
 Third execute post-configuration-openstack.sh Shell Script file for OpenStack Basic Configuration on Network and Image services
 ####
     cd /root
