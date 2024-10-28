@@ -5,7 +5,7 @@
 ## Step-1:
 ### Login Systems Terminal as Root
 
-First execute pre-configure-openstack.sh Shell Script file for Preparing Installation OpenStack
+First execute **pre-configure-openstack.sh** Shell Script file for Preparing Installation OpenStack
 ####
     dnf install git -y
     git clone https://github.com/SumonPaul18/build-openstack-packstack-almalinux9.git
@@ -25,7 +25,7 @@ Second execute build-openstack.sh Shell Script file for Install OpenStack
 After Successfully Installation Complete
 #
 ## Step-3:
-Third execute post-configuration-openstack.sh Shell Script file for OpenStack Basic Configuration on Network and Image services
+Third execute `post-configuration-openstack.sh` Shell Script file for OpenStack Basic Configuration on Network and Image services
 ####
     cd /root
     . keystonerc_admin
