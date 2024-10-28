@@ -8,9 +8,9 @@
 First execute `pre-configure-openstack.sh` Shell Script file for Preparing Installation OpenStack
 ####
     dnf install git -y
-    git clone https://github.com/SumonPaul18/build-openstack-packstack-almalinux9.git
-    chmod -R +x build-openstack-packstack-almalinux9
-    cd build-openstack-packstack-almalinux9
+    git clone https://github.com/SumonPaul18/openstack-packstack.git
+    chmod -R +x openstack-packstack
+    cd openstack-packstack
     ls
     . pre-configuration-openstack.sh
 ####  
@@ -20,7 +20,7 @@ After Done Configuration the system has Rebooted
 
 Second execute `build-openstack.sh` Shell Script file for Install OpenStack
 ####
-    cd /root/build-openstack-packstack-almalinux9
+    cd /root/openstack-packstack
     . build-openstack.sh
 After Successfully Installation Complete
 #
@@ -29,7 +29,7 @@ Third execute `post-configuration-openstack.sh` Shell Script file for OpenStack 
 ####
     cd /root
     . keystonerc_admin
-    . /root/build-openstack-packstack-almalinux9/post-configuration-openstack.sh
+    . /root/openstack-packstack/post-configuration-openstack.sh
 Now Successfully Configured OpenStack 
 
 #### Now, Your Hits your `OpenStack Server IP` on Browser
