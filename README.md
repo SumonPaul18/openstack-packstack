@@ -31,5 +31,6 @@ Third execute `post-configuration-openstack.sh` Shell Script file for OpenStack 
     . keystonerc_admin
     . /root/openstack-packstack/post-configuration-openstack.sh
 Now Successfully Configured OpenStack 
-
+#
 #### Now, Your Hits your `OpenStack Server IP` on Browser
+![OpenStack Dashboard](https://github.com/SumonPaul18/openstack-packstack/blob/main/images/oplogin.png)
