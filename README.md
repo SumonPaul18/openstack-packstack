@@ -21,7 +21,7 @@ After Done Configuration the system has Rebooted
 Second execute `build-openstack.sh` Shell Script file for Install OpenStack
 ####
     cd /root/openstack-packstack
-    . build-openstack.sh
+    . install-openstack.sh
 After Successfully Installation Complete
 #
 ## Step-3:
