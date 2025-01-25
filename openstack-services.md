@@ -39,4 +39,61 @@ Citations:
 [5] https://openmetal.io/docs/glossary/what-are-openstack-services/
 [6] https://computingforgeeks.com/wp-content/uploads/2021/01/openstack-core-services.png?sa=X&ved=2ahUKEwjIgZaDt46LAxXzl-4BHZ7RLFkQ_B16BAgAEAI
 [7] https://www.openstack.org/software/project-navigator/openstack-components
-[8] https://docs.openstack.org/ocata/admin-guide/common/get-started-openstack-services.html
+[8] https://docs.openstack.org/ocata/admin-guide/common/get-started-openstack-services.html.
+
+OpenStack-এ নতুন সার্ভিস ইনস্টল করতে, আপনি সাধারণত Packstack বা OpenStack-Ansible ব্যবহার করেন। এখানে Packstack ব্যবহার করে একটি সার্ভিস ইনস্টল করার জন্য সাধারণ পদক্ষেপ এবং কমান্ড দেওয়া হলো:
+
+## 1. **Packstack ব্যবহার করে সার্ভিস ইনস্টল করা**
+
+### ধাপ 1: উত্তর ফাইল তৈরি করা
+
+প্রথমে, একটি উত্তর ফাইল তৈরি করুন যা আপনার কনফিগারেশন সেটিংস ধারণ করবে। উদাহরণস্বরূপ:
+```bash
+packstack --gen-answer-file=/root/answers.txt
+```
+
+### ধাপ 2: উত্তর ফাইল সম্পাদনা করা
+
+উত্তর ফাইলটি সম্পাদনা করুন এবং যে সার্ভিসটি আপনি ইনস্টল করতে চান সেটির জন্য কনফিগারেশন যুক্ত করুন। উদাহরণস্বরূপ, যদি আপনি Trove (ডেটাবেস অ্যাজ এ সার্ভিস) ইনস্টল করতে চান, তাহলে নিম্নলিখিত লাইনগুলি যুক্ত করুন:
+```plaintext
+CONFIG_TROVE_INSTALL=y
+```
+
+### ধাপ 3: সার্ভিস ইনস্টল করা
+
+আপনার কনফিগারেশন অনুযায়ী Packstack কমান্ড চালান:
+```bash
+packstack --answer-file=/root/answers.txt
+```
+
+## 2. **নির্দিষ্ট সার্ভিসের জন্য কমান্ড**
+
+নিচে কিছু নির্দিষ্ট সার্ভিসের জন্য কমান্ড দেওয়া হলো:
+
+### Trove ইনস্টল করার জন্য:
+```bash
+packstack --os-trove-install=y --answer-file=/root/answers.txt
+```
+
+### Ironic ইনস্টল করার জন্য:
+```bash
+packstack --os-ironic-install=y --answer-file=/root/answers.txt
+```
+
+### Octavia ইনস্টল করার জন্য:
+```bash
+packstack --os-octavia-install=y --answer-file=/root/answers.txt
+```
+
+### Manila ইনস্টল করার জন্য:
+```bash
+packstack --os-manila-install=y --answer-file=/root/answers.txt
+```
+
+## 3. **সার্ভিসের নির্দিষ্ট কনফিগারেশন**
+
+প্রতিটি সার্ভিসের জন্য কিছু নির্দিষ্ট কনফিগারেশন থাকতে পারে, তাই নিশ্চিত করুন যে আপনি তাদের ডকুমেন্টেশন পর্যালোচনা করেছেন এবং প্রয়োজনীয় সেটিংস যুক্ত করেছেন।
+
+## সারসংক্ষেপ
+
+এই পদক্ষেপগুলি অনুসরণ করে, আপনি OpenStack-এ যে কোনো সার্ভিস সহজেই ইনস্টল করতে পারবেন। সবসময় নিশ্চিত হন যে আপনার পরিবেশ প্রস্তুত এবং সমস্ত নির্ভরতা পূরণ হয়েছে।
