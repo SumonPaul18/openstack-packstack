@@ -67,7 +67,6 @@ packstack --os-neutron-ml2-tenant-network-types=vxlan \
 --os-heat-install=y \
 --os-ceilometer-install=y \
 --os-aodh-install=y \
---os-gnocchi-install=y \
 --gen-answer-file /root/answers.txt
 
 #Take Copy the answes file
