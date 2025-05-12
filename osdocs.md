@@ -188,7 +188,7 @@ The Horizon dashboard provides a web-based interface to:
 If you face any issues, feel free to:
 
 * Open an issue in this repository
-* Contact me at [LinkedIn](https://linkedin.com/in/sumonpaul18)
+* Contact me at [LinkedIn](https://www.linkedin.com/in/sumonpaul/)
 * 📧 Email: `sumonpaul461@gmail.com`
 
 ---
