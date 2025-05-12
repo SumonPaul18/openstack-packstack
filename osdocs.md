@@ -1,7 +1,3 @@
-Here is a **more informative, professional, and beginner-friendly** `README.md` file for your **OpenStack PackStack on AlmaLinux** project. This version adds context, clarity, explanations, and tips to help users fully understand what they are doing at each step.
-
----
-
 # ☁️ Build Your Own OpenStack Cloud Using PackStack on AlmaLinux
 
 ![Install OpenStack](https://github.com/SumonPaul18/openstack-packstack/blob/main/images/InstallOpenStack.png)
@@ -163,6 +159,21 @@ The Horizon dashboard provides a web-based interface to:
 
 ---
 
+## 🎥 Tutorials
+
+📺 **Subscribe to my YouTube channel for step-by-step video tutorials:**
+🔗 [Sumon Paul YouTube Channel](https://www.youtube.com/@cloudengineer187)
+
+🎬 **Video Guides:**
+
+* 🔹 [How to Install OpenStack on AlmaLinux using PackStack – Step-by-Step](https://youtu.be/kMxnd3gqYdg?list=PLb2ltiwnZ24xGWcrdjf8QC_Ac8dFBTBnZ) *(Replace with actual video link)*
+* 🔹 [Adding New Compute Nodes on Existing OpenStack Cloud](https://youtu.be/vcKe_V0NLV8?list=PLb2ltiwnZ24xGWcrdjf8QC_Ac8dFBTBnZ)
+
+
+> 🎯 More videos coming soon! Stay subscribed for DevOps, Cloud, and OpenStack content.
+
+---
+
 ## 🔗 Official References
 
 * 🌐 [OpenStack Docs](https://docs.openstack.org/)
@@ -177,7 +188,7 @@ If you face any issues, feel free to:
 
 * Open an issue in this repository
 * Contact me at [LinkedIn](https://linkedin.com/in/sumonpaul18)
-* Explore community forums for OpenStack
+* 📧 Email: `sumonpaul461@gmail.com`
 
 ---
 
