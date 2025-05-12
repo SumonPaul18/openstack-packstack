@@ -166,7 +166,7 @@ The Horizon dashboard provides a web-based interface to:
 
 🎬 **Video Guides:**
 
-* 🔹 [How to Install OpenStack on AlmaLinux using PackStack – Step-by-Step](https://youtu.be/kMxnd3gqYdg?list=PLb2ltiwnZ24xGWcrdjf8QC_Ac8dFBTBnZ) *(Replace with actual video link)*
+* 🔹 [How to Install OpenStack on AlmaLinux using PackStack – Step-by-Step](https://youtu.be/kMxnd3gqYdg?list=PLb2ltiwnZ24xGWcrdjf8QC_Ac8dFBTBnZ)
 * 🔹 [Adding New Compute Nodes on Existing OpenStack Cloud](https://youtu.be/vcKe_V0NLV8?list=PLb2ltiwnZ24xGWcrdjf8QC_Ac8dFBTBnZ)
 
 
