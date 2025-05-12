@@ -162,7 +162,8 @@ The Horizon dashboard provides a web-based interface to:
 ## 🎥 Tutorials
 
 📺 **Subscribe to my YouTube channel for step-by-step video tutorials:**
-🔗 [Sumon Paul YouTube Channel](https://www.youtube.com/@cloudengineer187)
+
+* 🔗 [**Cloud Engineer** - YouTube Channel](https://www.youtube.com/@cloudengineer187)
 
 🎬 **Video Guides:**
 
