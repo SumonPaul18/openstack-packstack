@@ -53,9 +53,11 @@ http://<Your-OpenStack-Server-IP>
 #### In my Case, I has Pointed a Domain `cloud.paulco.xyz` with my OpenStack Server IP:
 ![OpenStack Login](https://github.com/SumonPaul18/openstack-packstack/blob/main/images/oplogin.png)
 
+---
 ### 📊 OpenStack Dashboard Overview
 ![OpenStack Dashboard](https://github.com/SumonPaul18/openstack-packstack/blob/main/images/opdash.png)
 
+---
 ### 🙌 You're Done!
 Congratulations! You have successfully installed and configured OpenStack Cloud on AlmaLinux using PackStack. You can now start launching instances, managing users, and exploring OpenStack services through the Horizon dashboard.
 
