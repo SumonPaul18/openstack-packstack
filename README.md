@@ -48,7 +48,7 @@ Once everything is configured, open your browser and visit:
 ```
 http://<Your-OpenStack-Server-IP>
 ```
-
+---
 ### 🔐 OpenStack Login Page
 #### In my Case, I has Pointed a Domain `cloud.paulco.xyz` with my OpenStack Server IP:
 ![OpenStack Login](https://github.com/SumonPaul18/openstack-packstack/blob/main/images/oplogin.png)
