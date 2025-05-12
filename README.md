@@ -1,9 +1,19 @@
-# How to Build OpenStack Cloud using PackStack on Almalinux
+# 🚀 How to Build OpenStack Cloud using PackStack on AlmaLinux
 #### 
 ![OpenStack](https://github.com/SumonPaul18/openstack-packstack/blob/main/images/InstallOpenStack.png)
-#
-## Step-1:
-### Login Systems Terminal as Root
+---
+
+This guide will help you set up OpenStack Cloud on AlmaLinux using PackStack in just a few steps. Whether you're a beginner or a cloud enthusiast, follow these steps to build your private cloud easily.
+
+#### 📋 Prerequisites
+- Fresh AlmaLinux OS (Tested on AlmaLinux 8+)
+- Root privileges
+- Internet connectivity
+- At least 16 GB RAM (Recommended)
+- Virtualization supported CPU
+
+### 🛠️ Step 1: Pre-Configuration
+Login to your terminal as root and prepare the system by running the pre-configuration script.
 
 First execute `pre-configure-openstack.sh` Shell Script file for Preparing Installation OpenStack
 ####
@@ -14,24 +24,31 @@ First execute `pre-configure-openstack.sh` Shell Script file for Preparing Insta
     ls
     . pre-configuration-openstack.sh
 ####  
-After Done Configuration the system has Rebooted
-#
-## Step-2:
+🔁 The system will reboot automatically after completing the pre-configuration.
 
-Second execute `build-openstack.sh` Shell Script file for Install OpenStack
+---
+### 🔧 Step 2: Install OpenStack with PackStack
+After the reboot, execute the installation script to install OpenStack:
 ####
     cd /root/openstack-packstack
     . install-openstack.sh
-After Successfully Installation Complete
-#
-## Step-3:
-Third execute `post-configuration-openstack.sh` Shell Script file for OpenStack Basic Configuration on Network and Image services
+✅ This step installs OpenStack and sets up the necessary services using PackStack.
+
+---
+### 🔌 Step 3: Post-Configuration
+Once OpenStack is installed, configure basic networking and image services:
 ####
     cd /root
     . keystonerc_admin
     . /root/openstack-packstack/post-configuration-openstack.sh
-Now Successfully Configured OpenStack 
-### Now, Your Hits your `OpenStack Server IP` on Browser
+📦 This script will set up an external network, flavors, and default images.
+
+### 🌐 Access OpenStack Dashboard
+Once everything is configured, open your browser and visit:
+```
+http://<Your-OpenStack-Server-IP>
+```
+
 #
 #### In my Case, I has Pointed a Domain `cloud.paulco.xyz` with my OpenStack Server IP:
 ![OpenStack Login](https://github.com/SumonPaul18/openstack-packstack/blob/main/images/oplogin.png)
