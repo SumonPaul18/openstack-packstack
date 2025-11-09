@@ -19,6 +19,7 @@ echo
 echo
 
 read -p "$(echo -e "${bgreen}${bold}${blink}Type System Hostname: ${nc}")" hostname
+read -p "$(echo -e "${bgreen}${bold}${blink}Type Your Domain (Like: paulco.xyz): ${nc}")" mydomain
 
 hostnamectl set-hostname $hostname
 
@@ -91,7 +92,7 @@ cp /etc/sysconfig/network-scripts/ifcfg-$STATIC_INTERFACE /etc/sysconfig/network
 
 cat /etc/sysconfig/network-scripts/ifcfg-$STATIC_INTERFACE
 
-echo "$IP_ADDRESS $hostname.paulco.xyz $hostname" >> /etc/hosts
+echo "$IP_ADDRESS $hostname.$mydomain $hostname" >> /etc/hosts
 
 echo
 echo
